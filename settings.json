@@ -18,12 +18,13 @@
     "files.watcherExclude": {
         "**/.git/objects/**": true,
         "**/.git/subtree-cache/**": true,
-        "**/node_modules/*/**": true
+        "**/node_modules/*/**": true,
+        "**/bower_components/*/**": true
     },
     "files.trimTrailingWhitespace": true,
     "editor.renderWhitespace": "all",
     "editor.lineNumbers": "on",
-    "editor.fontSize": 12,
+    "editor.fontSize": 13,
     "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
     "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
     "editor.tabCompletion": true,
@@ -55,7 +56,7 @@
         "editorGroup.background": "#272822",
         "sideBar.background": "#272822"
     },
-    "window.zoomLevel": -0.75,
+    "window.zoomLevel": -1.1,
     "debug.allowBreakpointsEverywhere": true,
     "html.format.endWithNewline": true,
     "php.suggest.basic": true,
