@@ -2,11 +2,15 @@
 {
     "files.autoSave": "off",
     "files.exclude": {
+        ".git": true,
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
+        "**/.pyc": true,
+        "*.pyc": true,
         "**/CVS": true,
-        "**/.DS_Store": true
+        "**/.DS_Store": true,
+        ".DS_Store": true
     },
     "files.watcherExclude": {
         "**/.git/objects/**": true,
