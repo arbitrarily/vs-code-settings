@@ -9,5 +9,15 @@
     "key": "cmd+end",
     "command": "cursorBottom",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "home",
+    "command": "cursorTop",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "end",
+    "command": "cursorBottom",
+    "when": "editorTextFocus"
   }
 ]
