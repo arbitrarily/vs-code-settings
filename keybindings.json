@@ -1,0 +1,13 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "cmd+home",
+    "command": "cursorTop",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+end",
+    "command": "cursorBottom",
+    "when": "editorTextFocus"
+  }
+]
