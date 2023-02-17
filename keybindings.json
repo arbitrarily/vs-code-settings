@@ -30,3 +30,4 @@
     "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
   }
 ]
+
