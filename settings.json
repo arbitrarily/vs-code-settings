@@ -257,7 +257,7 @@
         "**/temp": true,
         "**/yarn.lock": true,
         "**/CHANGELOG*": true,
-        "**/LICENSE*": true,
+        "**/LICENSE*": true
     },
     "workbench.iconTheme": "vscode-icons",
     "workbench.editor.tabCloseButton": "right",
@@ -289,5 +289,23 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.editor.tabActionLocation": "right",
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "[nginx]": {
+        "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "workbench.editor.tabActionLocation": "right"
 }
