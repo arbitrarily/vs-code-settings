@@ -28,6 +28,17 @@
     "key": "shift+cmd+h",
     "command": "editor.action.formatSelection",
     "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
-  }
+  },
+  {
+    "key": "cmd+1",
+    "command": "workbench.action.moveEditorToLeftGroup"
+  },
+  {
+    "key": "cmd+2",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "cmd+shift+2",
+    "command": "workbench.action.splitEditorOrthogonal"
+  },
 ]
-
