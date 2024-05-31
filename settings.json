@@ -12,7 +12,7 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
     },
     "[nginx]": {
         "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
