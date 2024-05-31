@@ -1,34 +1,122 @@
 {
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "[nginx]": {
+        "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "vscode.css-language-features",
+        "editor.suggest.insertMode": "replace"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "accessibility.dimUnfocused.enabled": true,
+    "accessibility.dimUnfocused.opacity": 0.666,
     "breadcrumbs.enabled": true,
+    "breadcrumbs.symbolPath": "off",
     "css.lint.hexColorLength": "ignore",
     "css.lint.important": "warning",
-    "editor.fontFamily": "'Hack Nerd Font', 'Hack', 'Fira Mono', Menlo Bold, Monaco, 'Courier New', monospace",
-    "editor.minimap.enabled": false,
-    "editor.formatOnSave": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.accessibilitySupport": "off",
     "editor.autoClosingBrackets": "always",
-    "editor.padding.top": 20,
-    "editor.padding.bottom": 20,
-    "editor.inlineSuggest.enabled": true,
-    "editor.guides.bracketPairs": "active",
-    "editor.scrollbar.horizontal": "hidden",
-    "editor.formatOnPaste": true,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true,
-    "editor.hover.sticky": true,
-    "editor.wordWrap": "on",
-    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
     "editor.autoIndent": "advanced",
-    "editor.find.addExtraSpaceOnTop": false,
-    "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
     "editor.codeActionsOnSave": {
         "source.fixAll": "never",
         "source.fixAll.eslint": "explicit",
         "source.organizeImports": "never"
     },
+    "editor.codeLens": false,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.detectIndentation": true,
+    "editor.dragAndDrop": false,
+    "editor.find.addExtraSpaceOnTop": false,
+    "editor.fontFamily": "'Hack Nerd Font', 'Hack', 'Fira Mono', Menlo Bold, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.hover.sticky": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.insertSpaces": true,
+    "editor.minimap.enabled": false,
+    "editor.padding.bottom": 20,
+    "editor.padding.top": 20,
+    "editor.quickSuggestionsDelay": 50,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.stickyScroll.enabled": true,
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 2,
+    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+    "editor.wordWrap": "on",
     "eslint.codeAction.showDocumentation": {
         "enable": true
     },
     "eslint.quiet": true,
+    "eslint.rules.customizations": [
+        {
+            "rule": "style/*",
+            "severity": "off"
+        },
+        {
+            "rule": "format/*",
+            "severity": "off"
+        },
+        {
+            "rule": "*-indent",
+            "severity": "off"
+        },
+        {
+            "rule": "*-spacing",
+            "severity": "off"
+        },
+        {
+            "rule": "*-spaces",
+            "severity": "off"
+        },
+        {
+            "rule": "*-order",
+            "severity": "off"
+        },
+        {
+            "rule": "*-dangle",
+            "severity": "off"
+        },
+        {
+            "rule": "*-newline",
+            "severity": "off"
+        },
+        {
+            "rule": "*quotes",
+            "severity": "off"
+        },
+        {
+            "rule": "*semi",
+            "severity": "off"
+        }
+    ],
     "eslint.validate": [
         "javascript",
         "typescript",
@@ -41,51 +129,45 @@
         "jsonc",
         "json5"
     ],
-    "eslint.rules.customizations": [
-        { "rule": "style/*", "severity": "off" },
-        { "rule": "format/*", "severity": "off" },
-        { "rule": "*-indent", "severity": "off" },
-        { "rule": "*-spacing", "severity": "off" },
-        { "rule": "*-spaces", "severity": "off" },
-        { "rule": "*-order", "severity": "off" },
-        { "rule": "*-dangle", "severity": "off" },
-        { "rule": "*-newline", "severity": "off" },
-        { "rule": "*quotes", "severity": "off" },
-        { "rule": "*semi", "severity": "off" }
-    ],
     "explorer.autoReveal": true,
+    "explorer.confirmDragAndDrop": false,
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "extensions.closeExtensionDetailsOnViewChange": true,
+    "extensions.ignoreRecommendations": true,
     "files.autoSave": "off",
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
     "files.exclude": {
-        ".git": true,
+        "**/.DS_Store": true,
         "**/.git": true,
+        "**/.hg": true,
+        "**/.map": true,
+        "**/.pyc": true,
         "**/.svn": true,
         "**/.vscode": true,
-        "**/.hg": true,
-        "**/.pyc": true,
-        "**/.map": true,
-        "*.pyc": true,
-        "*.map": true,
         "**/CVS": true,
-        "**/.DS_Store": true,
-        ".DS_Store": true
+        "*.map": true,
+        "*.pyc": true,
+        ".DS_Store": true,
+        ".git": true
     },
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
     "files.watcherExclude": {
         "**/.git/objects/**": true,
         "**/.git/subtree-cache/**": true,
-        "**/node_modules/*/**": true,
-        "**/bower_components/*/**": true
+        "**/bower_components/*/**": true,
+        "**/node_modules/*/**": true
     },
-    "github.copilot.enable": {
-        "*": true,
-        "yaml": true,
-        "plaintext": true,
-        "markdown": true,
-        "scminput": false
-    },
-    "gitlens.codeLens.authors.enabled": true,
+    "git.decorations.enabled": true,
+    // "github.copilot.enable": {
+    //     "*": true,
+    //     "yaml": true,
+    //     "plaintext": true,
+    //     "markdown": true,
+    //     "scminput": false
+    // },
+    "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.enabled": true,
+    "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.gitCommands.search.showResultsInSideBar": false,
     "gitlens.menus": {
         "editor": {
@@ -130,8 +212,30 @@
             "stash": true
         }
     },
+    "gitlens.telemetry.enabled": false,
     "html.format.enable": true,
     "html.format.endWithNewline": false,
+    "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
+    "intelephense.completion.insertUseDeclaration": true,
+    "intelephense.completion.triggerParameterHints": true,
+    "intelephense.files.exclude": [
+        "**/.git/**",
+        "**/.svn/**",
+        "**/.hg/**",
+        "**/CVS/**",
+        "**/.DS_Store/**",
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/storage",
+        "**/storage/**",
+        "**/tests/**",
+        "**/resources/views/**",
+        "**/database/migrations/**",
+        "**/storage/framework/views/**",
+        "_ide_helper.php",
+        "_ide_helper_models"
+    ],
+    "intelephense.format.enable": true,
     "intelephense.stubs": [
         "apache",
         "bcmath",
@@ -209,31 +313,17 @@
         "zlib"
     ],
     "intelephense.telemetry.enabled": false,
-    "intelephense.format.enable": true,
-    "intelephense.completion.triggerParameterHints": true,
-    "intelephense.completion.insertUseDeclaration": true,
-    "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
     "intelephense.trace.server": "messages",
-    "intelephense.files.exclude": [
-        "**/.git/**",
-        "**/.svn/**",
-        "**/.hg/**",
-        "**/CVS/**",
-        "**/.DS_Store/**",
-        "**/node_modules/**",
-        "**/bower_components/**",
-        "**/storage",
-        "**/storage/**",
-        "**/tests/**",
-        "**/resources/views/**",
-        "**/database/migrations/**",
-        "**/storage/framework/views/**",
-        "_ide_helper.php",
-        "_ide_helper_models"
-    ],
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "keyboard.touchbar.enabled": false,
     "markdown.preview.scrollEditorWithPreview": true,
     "markdown.preview.scrollPreviewWithEditor": true,
-    "prettier.enable": true,
+    "prettier.enable": false,
+    "prettier.printWidth": 120,
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "problems.decorations.enabled": true,
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
     "scss.lint.important": "warning",
     "search.exclude": {
         "**/*.snap": true,
@@ -247,7 +337,9 @@
         "**/.yarn": true,
         "**/assets": true,
         "**/bower_components": true,
+        "**/CHANGELOG*": true,
         "**/dist/**": true,
+        "**/LICENSE*": true,
         "**/logs": true,
         "**/node_modules": true,
         "**/out/**": true,
@@ -255,57 +347,26 @@
         "**/pnpm-lock.yaml": true,
         "**/public": true,
         "**/temp": true,
-        "**/yarn.lock": true,
-        "**/CHANGELOG*": true,
-        "**/LICENSE*": true
+        "**/yarn.lock": true
     },
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.editor.tabCloseButton": "right",
-    "workbench.editor.closeOnFileDelete": false,
-    "workbench.colorTheme": "Monokai Pro New KC",
-    "workbench.sideBar.location": "right",
-    "workbench.settings.editor": "json",
-    "workbench.fontAliasing": "antialiased",
-    "workbench.tree.enableStickyScroll": true,
-    "solidity.telemetry": false,
-    "telemetry.telemetryLevel": "off",
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "terminal.external.osxExec": "iTerm.app",
-    "vsicons.dontShowNewVersionMessage": true,
-    "workbench.editor.titleScrollbarSizing": "large",
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.quickSuggestionsDelay": 50,
-    "window.closeWhenEmpty": true,
-    "editor.dragAndDrop": false,
-    "python.defaultInterpreterPath": "/usr/local/bin/python3",
-    "explorer.confirmDragAndDrop": false,
-    "workbench.startupEditor": "none",
     "security.workspace.trust.untrustedFiles": "open",
+    "telemetry.telemetryLevel": "off",
+    "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.inheritEnv": false,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[xml]": {
-        "editor.defaultFormatter": "redhat.vscode-xml"
-    },
-    "[nginx]": {
-        "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
-    },
-    "[scss]": {
-        "editor.defaultFormatter": "vscode.css-language-features"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "[css]": {
-        "editor.defaultFormatter": "vscode.css-language-features"
-    },
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
-    },
-    "workbench.editor.tabActionLocation": "right"
+    "vsicons.dontShowNewVersionMessage": true,
+    "vsicons.presets.hideExplorerArrows": true,
+    "window.closeWhenEmpty": true,
+    "window.titleBarStyle": "custom",
+    // "github.copilot.editor.enableAutoCompletions": true,
+    "workbench.colorTheme": "Monokai Pro New KC",
+    "workbench.editor.closeOnFileDelete": false,
+    "workbench.editor.tabActionLocation": "right",
+    "workbench.editor.titleScrollbarSizing": "large",
+    "workbench.fontAliasing": "antialiased",
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.settings.editor": "json",
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
+    "workbench.tips.enabled": false,
+    "workbench.tree.enableStickyScroll": true
 }
