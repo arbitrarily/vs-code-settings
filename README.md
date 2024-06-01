@@ -1,5 +1,8 @@
 # VS Code Settings
 
+![image](https://github.com/arbitrarily/vs-code-settings/assets/899183/a88e2293-679e-4534-a0d8-976fecfd9f14)
+
+
 ### Extensions Location
 
 ```bash
