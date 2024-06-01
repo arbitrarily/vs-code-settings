@@ -11,6 +11,9 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
     "[markdown]": {
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
     },
@@ -25,7 +28,7 @@
         "editor.suggest.insertMode": "replace"
     },
     "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -43,7 +46,6 @@
     "editor.accessibilitySupport": "off",
     "editor.autoClosingBrackets": "always",
     "editor.autoIndent": "advanced",
-    "editor.guides.indentation": false,
     "editor.codeActionsOnSave": {
         "source.fixAll": "never",
         "source.fixAll.eslint": "explicit",
@@ -52,8 +54,6 @@
     "editor.codeLens": false,
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.detectIndentation": true,
-    "scm.showActionButton": false,
-    "scm.diffDecorationsGutterWidth": 5,
     "editor.dragAndDrop": false,
     "editor.find.addExtraSpaceOnTop": false,
     "editor.fontFamily": "'Hack Nerd Font', 'Hack', 'Fira Mono', Menlo Bold, Monaco, 'Courier New', monospace",
@@ -61,6 +61,7 @@
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.guides.bracketPairs": "active",
+    "editor.guides.indentation": false,
     "editor.hover.sticky": true,
     "editor.inlineSuggest.enabled": true,
     "editor.insertSpaces": true,
@@ -69,6 +70,7 @@
     "editor.padding.top": 20,
     "editor.quickSuggestionsDelay": 50,
     "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.verticalScrollbarSize": 10,
     "editor.stickyScroll.enabled": true,
     "editor.tabCompletion": "on",
     "editor.tabSize": 2,
@@ -172,6 +174,10 @@
     "gitlens.codeLens.enabled": true,
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.gitCommands.search.showResultsInSideBar": false,
+    "gitlens.hovers.avatarSize": 28,
+    "gitlens.hovers.changesDiff": "hunk",
+    "gitlens.hovers.detailsMarkdownFormat": "${avatar} &nbsp;__${author}__, ${ago} &nbsp; \n ${message}${\n\n---\n\nfootnotes}\n",
+    "gitlens.hovers.pullRequests.enabled": false,
     "gitlens.menus": {
         "editor": {
             "blame": false,
@@ -228,12 +234,15 @@
     "keyboard.touchbar.enabled": false,
     "markdown.preview.scrollEditorWithPreview": true,
     "markdown.preview.scrollPreviewWithEditor": true,
+    "powershell.startAutomatically": true,
     "prettier.enable": false,
     "prettier.printWidth": 120,
     "prettier.semi": false,
     "prettier.singleQuote": true,
     "problems.decorations.enabled": true,
     "python.defaultInterpreterPath": "/usr/local/bin/python3",
+    "scm.diffDecorationsGutterWidth": 5,
+    "scm.showActionButton": false,
     "scss.lint.important": "warning",
     "search.exclude": {
         "**/*.snap": true,
@@ -261,38 +270,46 @@
     },
     "security.workspace.trust.untrustedFiles": "open",
     "telemetry.telemetryLevel": "off",
+    "terminal.explorerKind": "external",
     "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.hideOnStartup": "always",
     "terminal.integrated.inheritEnv": false,
-    "typescript.inlayHints.enumMemberValues.enabled": true,
-    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-    "typescript.inlayHints.parameterNames.enabled": "all",
-    "typescript.inlayHints.parameterTypes.enabled": true,
+    "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+    // "typescript.inlayHints.enumMemberValues.enabled": true,
+    // "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    // "typescript.inlayHints.parameterNames.enabled": "all",
+    // "typescript.inlayHints.parameterTypes.enabled": true,
+    // "typescript.inlayHints.variableTypes.enabled": true,
     "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-    "typescript.inlayHints.variableTypes.enabled": true,
     "typescript.suggest.completeFunctionCalls": true,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "window.closeWhenEmpty": true,
-    "window.titleBarStyle": "custom",
     "window.commandCenter": false,
+    "window.titleBarStyle": "custom",
+    "workbench.activityBar.location": "top",
+    "workbench.colorCustomizations": {
+        "editorHoverWidget.background": "#0a0a0a", // Change this to your preferred background color
+        "editorHoverWidget.border": "#000",
+        "pickerBackground": "#09090a",
+        "quickInput.background": "#09090a",
+        "quickInput.foreground": "#6a6a6a",
+        "quickInputList.focusForeground": "#fff",
+        "quickInputList.focusIconForeground": "#fff"
+    },
+    "workbench.colorTheme": "Monokai Pro New KC",
     "workbench.editor.closeOnFileDelete": false,
+    "workbench.editor.showTabs": "multiple",
+    "workbench.editor.tabActionCloseVisibility": false,
     "workbench.editor.tabActionLocation": "right",
     "workbench.editor.titleScrollbarSizing": "large",
     "workbench.fontAliasing": "antialiased",
-    "workbench.editor.tabActionCloseVisibility": false,
     "workbench.iconTheme": "chalice-icon-theme",
-    "workbench.settings.editor": "json",
-    "editor.scrollbar.verticalScrollbarSize": 10,
-    "workbench.sideBar.location": "right",
-    "workbench.tree.indent": 10,
-    "workbench.startupEditor": "none",
-    "workbench.editor.showTabs": "multiple",
-    "workbench.tips.enabled": false,
     "workbench.layoutControl.enabled": false,
-    "workbench.tree.enableStickyScroll": true,
     "workbench.productIconTheme": "icons-carbon-tweaked",
-    "workbench.colorTheme": "Monokai Pro New KC",
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "workbench.activityBar.location": "top"
+    "workbench.settings.editor": "json",
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
+    "workbench.tips.enabled": false,
+    "workbench.tree.enableStickyScroll": true,
+    "workbench.tree.indent": 10
 }
